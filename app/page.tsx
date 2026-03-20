@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from 'react';
-import { Cpu, Zap, CheckCircle, ArrowRight, Lock, Monitor, Terminal, Shield, ChevronRight, Play } from 'lucide-react';
+import { Cpu, Zap, CheckCircle, ArrowRight, Lock, Monitor, Terminal, Shield, ChevronRight, Play, Activity } from 'lucide-react';
 import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
 
@@ -83,7 +83,7 @@ const AutoPriseLandingPage = () => {
   return (
     <div className="min-h-screen bg-slate-950 text-slate-100 font-sans selection:bg-blue-500/30 overflow-x-hidden">
       
-      {/* Dynamic Background (Impossible with basic HTML/CSS JS without messy code) */}
+      {/* Dynamic Background */}
       <div className="fixed inset-0 z-0 overflow-hidden pointer-events-none">
         <div className="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-blue-600/10 blur-[120px] rounded-full animate-pulse" />
         <div className="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] bg-cyan-600/10 blur-[120px] rounded-full" style={{ animationDelay: '2s' }} />
@@ -145,7 +145,7 @@ const AutoPriseLandingPage = () => {
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 via-cyan-300 to-indigo-400 animate-gradient-x">
               Pure Intent.
             </span>
-          </h1 >
+          </h1>
           
           <motion.p 
             initial={{ opacity: 0, y: 20 }}
@@ -193,9 +193,9 @@ const AutoPriseLandingPage = () => {
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-3 gap-8">
             {[
-              { title: "Privacy-First", icon: Lock, color: "blue", desc: "100% local inference. Your sensitive client data never leaves your infrastructure." },
-              { title: "Deep OS Access", icon: Terminal, color: "cyan", desc: "Native access to PowerShell, File Systems, and Windows APIs for true autonomy." },
-              { title: "Multi-Tenant", icon: Monitor, color: "indigo", desc: "Manage 10,000 local instances from a single, secure, federated dashboard." }
+              { title: "Privacy-First", icon: Lock, bg: "bg-blue-500/10", text: "text-blue-400", desc: "100% local inference. Your sensitive client data never leaves your infrastructure." },
+              { title: "Deep OS Access", icon: Terminal, bg: "bg-cyan-500/10", text: "text-cyan-400", desc: "Native access to PowerShell, File Systems, and Windows APIs for true autonomy." },
+              { title: "Multi-Tenant", icon: Monitor, bg: "bg-indigo-500/10", text: "text-indigo-400", desc: "Manage 10,000 local instances from a single, secure, federated dashboard." }
             ].map((f, i) => (
               <motion.div 
                 key={i}
@@ -205,8 +205,8 @@ const AutoPriseLandingPage = () => {
                 transition={{ delay: i * 0.1 }}
                 className="p-10 rounded-3xl border border-slate-800 bg-slate-900/30 hover:bg-slate-900/60 hover:border-blue-500/30 transition-all group"
               >
-                <div className={`w-14 h-14 rounded-2xl flex items-center justify-center mb-8 bg-${f.color}-500/10 group-hover:scale-110 group-hover:rotate-3 transition-all`}>
-                  <f.icon className={`text-${f.color}-400 w-7 h-7`} />
+                <div className={`w-14 h-14 rounded-2xl flex items-center justify-center mb-8 ${f.bg} group-hover:scale-110 group-hover:rotate-3 transition-all`}>
+                  <f.icon className={`${f.text} w-7 h-7`} />
                 </div>
                 <h3 className="text-2xl font-bold text-white mb-4">{f.title}</h3>
                 <p className="text-slate-500 leading-relaxed font-medium">{f.desc}</p>
@@ -277,7 +277,7 @@ const AutoPriseLandingPage = () => {
       <footer className="py-20 px-6 border-t border-slate-900 bg-slate-950">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-12">
           <div className="flex items-center gap-3">
-            <Image src="/icon.svg" alt="AutoPrise" width={32} height={32} />
+            <Image src="/logo.svg" alt="AutoPrise" width={32} height={32} />
             <span className="text-2xl font-bold text-white">AutoPrise</span>
           </div>
           
