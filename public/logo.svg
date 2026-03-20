@@ -1,0 +1,19 @@
+<svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="logo_grad" x1="20" y1="20" x2="100" y2="100" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2563EB"/>
+      <stop offset="1" stop-color="#0891B2"/>
+    </linearGradient>
+    <linearGradient id="claw_grad" x1="80" y1="40" x2="110" y2="80" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#CBD5E1"/>
+      <stop offset="1" stop-color="#94A3B8"/>
+    </linearGradient>
+  </defs>
+  <path d="M60 15L20 105H40L60 60L80 105H100L60 15Z" fill="url(#logo_grad)"/>
+  <path d="M45 80H75M50 70H70M60 30V50" stroke="#22D3EE" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+  <circle cx="45" cy="80" r="2" fill="#22D3EE"/>
+  <circle cx="75" cy="80" r="2" fill="#22D3EE"/>
+  <circle cx="60" cy="50" r="2" fill="#22D3EE"/>
+  <path d="M85 50C95 50 105 60 105 75C105 90 95 100 85 100" stroke="url(#claw_grad)" stroke-width="8" stroke-linecap="round"/>
+  <path d="M105 75L115 75" stroke="url(#claw_grad)" stroke-width="4" stroke-linecap="round"/>
+</svg>

@@ -1,5 +1,6 @@
 import React from 'react';
-import { Shield, Cpu, Activity, Zap, CheckCircle, ArrowRight, Lock, Monitor, Terminal } from 'lucide-react';
+import { Cpu, Activity, Zap, CheckCircle, ArrowRight, Lock, Monitor, Terminal } from 'lucide-react';
+import Image from 'next/image';
 
 const AutoPriseLandingPage = () => {
   return (
@@ -8,8 +9,14 @@ const AutoPriseLandingPage = () => {
       <nav className="fixed top-0 w-full z-50 border-b border-slate-800/50 bg-slate-950/80 backdrop-blur-md">
         <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <div className="w-10 h-10 bg-gradient-to-br from-blue-600 to-cyan-400 rounded-lg flex items-center justify-center">
-              <Shield className="text-white w-6 h-6" />
+            <div className="w-10 h-10 flex items-center justify-center">
+              <Image 
+                src="/icon.svg" 
+                alt="AutoPrise Logo" 
+                width={40} 
+                height={40}
+                className="rounded-lg shadow-lg shadow-blue-500/20"
+              />
             </div>
             <span className="text-2xl font-bold tracking-tight text-white">AutoPrise</span>
           </div>
@@ -35,6 +42,7 @@ const AutoPriseLandingPage = () => {
         <div className="max-w-5xl mx-auto text-center">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-xs font-bold uppercase tracking-widest mb-8">
             <Zap className="w-3 h-3" /> 
+            Autonomous AI Workforce
           </div>
           <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight text-white mb-8 bg-clip-text text-transparent bg-gradient-to-b from-white to-slate-400 leading-[1.1]">
             The Autonomous Workforce for <br /> the Sovereign Enterprise
@@ -171,7 +179,7 @@ const AutoPriseLandingPage = () => {
       {/* Program Call to Action */}
       <section id="signup" className="py-24 px-6 text-center">
         <div id="pricing" className="max-w-4xl mx-auto p-12 md:p-20 rounded-[3rem] bg-gradient-to-br from-blue-600 to-indigo-900 relative overflow-hidden shadow-2xl shadow-blue-500/20">
-          <div className="absolute top-0 right-0 p-12 text-white/10">
+          <div className="absolute top-0 right-0 p-12 text-white/10 opacity-20">
             <Cpu className="w-64 h-64" />
           </div>
           <div className="relative z-10">
@@ -196,8 +204,13 @@ const AutoPriseLandingPage = () => {
       <footer className="py-12 px-6 border-t border-slate-800">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
           <div className="flex items-center gap-2">
-            <div className="w-8 h-8 bg-blue-600 rounded flex items-center justify-center">
-              <Shield className="text-white w-5 h-5" />
+            <div className="w-8 h-8 flex items-center justify-center">
+              <Image 
+                src="/icon.svg" 
+                alt="AutoPrise Icon" 
+                width={32} 
+                height={32}
+              />
             </div>
             <span className="text-xl font-bold text-white">AutoPrise</span>
           </div>
