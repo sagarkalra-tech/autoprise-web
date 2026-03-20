@@ -143,7 +143,7 @@ const AutoPriseLandingPage = () => {
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 via-cyan-300 to-indigo-400 animate-gradient-x">
               Pure Intent.
             </span>
-          </h1>
+          </motion.h1>
           
           <motion.p 
             initial={{ opacity: 0, y: 20 }}
