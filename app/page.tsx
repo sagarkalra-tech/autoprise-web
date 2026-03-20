@@ -1,11 +1,11 @@
 "use client";
 
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Cpu, Zap, CheckCircle, ArrowRight, Lock, Monitor, Terminal, Shield, ChevronRight, Play, Activity } from 'lucide-react';
 import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
 
-// --- Components for "The Tech Stack Pitch" ---
+// Final Production UI - AutoPrise Sovereign Enterprise
 
 const TerminalDemo = () => {
   const [logs, setLogs] = useState<{ text: string, type: 'info' | 'error' | 'success' | 'reasoning' }[]>([]);
@@ -77,13 +77,11 @@ const TerminalDemo = () => {
   );
 };
 
-// --- Main Page ---
-
 const AutoPriseLandingPage = () => {
   return (
     <div className="min-h-screen bg-slate-950 text-slate-100 font-sans selection:bg-blue-500/30 overflow-x-hidden">
       
-      {/* Dynamic Background */}
+      {/* Dynamic Background Effects */}
       <div className="fixed inset-0 z-0 overflow-hidden pointer-events-none">
         <div className="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-blue-600/10 blur-[120px] rounded-full animate-pulse" />
         <div className="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] bg-cyan-600/10 blur-[120px] rounded-full" style={{ animationDelay: '2s' }} />
@@ -216,7 +214,7 @@ const AutoPriseLandingPage = () => {
         </div>
       </section>
 
-      {/* Live Interactive Skill Demo (The Impressive Part) */}
+      {/* Live Interactive Skill Demo */}
       <section id="skills" className="py-32 px-6 bg-blue-600/5">
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-col lg:flex-row gap-24 items-center">
@@ -274,7 +272,7 @@ const AutoPriseLandingPage = () => {
         </motion.div>
       </section>
 
-      <footer className="py-20 px-6 border-t border-slate-900 bg-slate-950">
+      <footer className="py-20 px-6 border-t border-slate-800 bg-slate-950">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-12">
           <div className="flex items-center gap-3">
             <Image src="/logo.svg" alt="AutoPrise" width={32} height={32} />
