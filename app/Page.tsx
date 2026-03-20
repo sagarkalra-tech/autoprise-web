@@ -31,7 +31,7 @@ const AutoPriseLandingPage = () => {
       <section className="pt-40 pb-24 px-6">
         <div className="max-w-5xl mx-auto text-center">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-xs font-bold uppercase tracking-widest mb-8">
-            <Zap className="w-3 h-3" /> Rebranding PersonalClaw
+            <Zap className="w-3 h-3" /> 
           </div>
           <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight text-white mb-8 bg-clip-text text-transparent bg-gradient-to-b from-white to-slate-400 leading-[1.1]">
             The Autonomous Workforce for <br /> the Sovereign Enterprise
