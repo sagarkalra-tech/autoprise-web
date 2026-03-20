@@ -21,9 +21,12 @@ const AutoPriseLandingPage = () => {
             <a href="#pricing" className="hover:text-blue-400 transition-colors">Pricing</a>
           </div>
 
-          <button className="bg-blue-600 hover:bg-blue-500 text-white px-5 py-2.5 rounded-full text-sm font-semibold transition-all shadow-lg shadow-blue-900/20">
+          <a 
+            href="#signup" 
+            className="bg-blue-600 hover:bg-blue-500 text-white px-5 py-2.5 rounded-full text-sm font-semibold transition-all shadow-lg shadow-blue-900/20"
+          >
             Join the Program
-          </button>
+          </a>
         </div>
       </nav>
 
@@ -59,7 +62,7 @@ const AutoPriseLandingPage = () => {
       </section>
 
       {/* Trust Bar */}
-      <section className="py-12 border-y border-slate-800/50 bg-slate-900/30">
+      <section id="security" className="py-12 border-y border-slate-800/50 bg-slate-900/30">
         <div className="max-w-7xl mx-auto px-6 flex flex-wrap justify-center items-center gap-12 opacity-50 grayscale contrast-125">
            <div className="flex items-center gap-2 font-bold text-xl uppercase tracking-widest">SOC2 COMPLIANT</div>
            <div className="flex items-center gap-2 font-bold text-xl uppercase tracking-widest">HIPAA READY</div>
@@ -166,8 +169,8 @@ const AutoPriseLandingPage = () => {
       </section>
 
       {/* Program Call to Action */}
-      <section className="py-24 px-6 text-center">
-        <div className="max-w-4xl mx-auto p-12 md:p-20 rounded-[3rem] bg-gradient-to-br from-blue-600 to-indigo-900 relative overflow-hidden shadow-2xl shadow-blue-500/20">
+      <section id="signup" className="py-24 px-6 text-center">
+        <div id="pricing" className="max-w-4xl mx-auto p-12 md:p-20 rounded-[3rem] bg-gradient-to-br from-blue-600 to-indigo-900 relative overflow-hidden shadow-2xl shadow-blue-500/20">
           <div className="absolute top-0 right-0 p-12 text-white/10">
             <Cpu className="w-64 h-64" />
           </div>
